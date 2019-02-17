@@ -1,0 +1,409 @@
+body{
+    padding:0;
+    margin:0;
+}
+.ground{
+    overflow-x: hidden;
+}
+.back{
+    position:fixed;
+    z-index:-1;
+}
+.blue{
+    background:linear-gradient(150deg, #92daf7,#0202f1);
+    height:900px;
+    width:900px;
+    border-radius:100%;
+    top:-80vh;
+    left:-20vw;
+}
+.green{
+    background:#12ffb0;
+    width:900px;
+    height:900px;
+    right:-20vw;
+    bottom:-80vh;
+    border-radius:100%;
+}
+.red{
+    background:#ff006a;
+    width:500px;
+    height:500px;
+    border-radius:100%;
+    bottom:-40vh;
+    left:-15vw;
+}
+.yellow{
+    background:#f8ac20;
+    width:500px;
+    height:500px;
+    border-radius:100%;
+    top:-45vh;
+    right:-15vw;
+}
+
+@media screen and (max-width:1024px){
+.blue{
+    height:800px;
+    width:800px;
+    left:-35vw;
+    top:-70vh;
+}
+.green{
+    width:800px;
+    height:800px;
+    right:-35vw;
+    bottom:-70vh;
+}
+.red{
+    width:450px;
+    height:450px;
+    bottom:-40vh;
+}
+.yellow{
+    width:450px;
+    height:450px;
+    top:-40vh;
+}
+
+}
+@media screen and (max-width:1200px){
+.blue{
+    height:700px;
+    width:700px;
+    left:-15vw;
+    top:-50vh;
+}
+.green{
+    width:700px;
+    height:700px;
+    right:-15vw;
+    bottom:-50vh;
+}
+.red{
+    width:400px;
+    height:400px;
+}
+.yellow{
+    width:400px;
+    height:400px;
+}
+}
+
+@media screen and (max-width:992px){
+.blue{
+    height:700px;
+    width:700px;
+    left:-35vw;
+    top:-70vh;
+}
+.green{
+    width:700px;
+    height:700px;
+    right:-35vw;
+    bottom:-70vh;
+}
+.red{
+    width:400px;
+    height:400px;
+}
+.yellow{
+    width:400px;
+    height:400px;
+}
+
+}
+
+
+@media screen and (max-width:750px){
+.blue{
+    height:500px;
+    width:500px;
+    left:-25vw;
+    top:-40vh;
+}
+.green{
+    width:500px;
+    height:500px;
+    right:-25vw;
+    bottom:-40vh;
+}
+.red{
+    width:300px;
+    height:300px;
+    bottom:-25vh;
+    left:-10vw;
+}
+.yellow{
+    width:300px;
+    height:300px;
+    top:-25vh;
+    right:-10vw;
+}
+}
+@media screen and (max-width:640px){
+.blue{
+    height:300px;
+    width:300px;
+    left:-15vw;
+    top:-15vh;
+}
+.green{
+    width:300px;
+    height:300px;
+    right:-15vw;
+    bottom:-15vh;
+}
+.red{
+    width:200px;
+    height:200px;
+    bottom:-15vh;
+    left:-20vw;
+}
+.yellow{
+    width:200px;
+    height:200px;
+    top:-15vh;
+    right:-20vw;
+}
+
+}
+
+@media screen and (max-width:400px){
+.blue{
+    left:-40vw;
+    top:-20vh;
+}
+.green{
+    right:-40vw;
+    bottom:-20vh;
+}
+.red{
+    bottom:-20vh;
+    left:-25vw;
+}
+.yellow{
+    top:-20vh;
+    right:-25vw;
+}
+
+}
+
+@media screen and (max-width:330px){
+.blue{
+    left:-50vw;
+    top:-30vh;
+}
+.green{
+    right:-50vw;
+    bottom:-30vh;
+}
+.red{
+    bottom:-25vh;
+    left:-15vw;
+}
+.yellow{
+    top:-25vh;
+    right:-15vw;
+}
+
+}
+
+@media screen and (max-width:330px){
+.blue{
+    left:-55vw;
+    top:-35vh;
+}
+.green{
+    right:-55vw;
+    bottom:-35vh;
+}
+.red{
+    bottom:-30vh;
+    left:-18vw;
+}
+.yellow{
+    top:-30vh;
+    right:-18vw;
+}
+}
+.rectangle{
+    width:18rem;
+    height:32rem;
+    margin:6vh auto;
+    background:white;
+    border-radius:5px;
+    display:grid;
+    grid-template-rows:80px 50px auto;
+    box-shadow:0px 2px 10px 1px #787779;
+    font-family:sans-serif;
+    font-weight:500;
+}
+@media screen and (max-width:600px){
+.rectangle{
+    width:16rem;
+    height:28rem;
+}
+}
+.work-area{
+    text-align-last: right;
+    margin-top:40px;
+    font-size:25px;
+    margin:60px auto 0 0;
+    width:95%;
+    color:#ada4a2;
+    letter-spacing:5px;
+}
+.answer{
+    text-align-last: right;
+    margin:20px auto  0 0;
+    font-size:40px;
+    width:94%;
+}
+buttons{
+    text-align:center;
+    margin:10%;
+    display:grid;
+}
+
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:auto;
+    width:90%;
+    margin:10% auto;
+    grid-template-areas:
+        "power plub perc div"
+        "seven eight nine time"
+        "four five six minus"
+        "one two three plus"
+        "zero dot equals equals";
+}
+buttons p{
+    margin:auto;
+    font-size:24px;
+    font-weight:500;
+}
+.grey{
+    background:#f1eded;
+    border-radius:50%;
+}
+
+.c{
+    grid-area:power;
+}
+
+.plus-minus{
+    grid-area:plub;
+    
+}
+.percentage{
+    grid-area:perc;
+}
+.divisor{
+    grid-area:div;
+}
+.seven{
+    grid-area:seven;
+}
+.multiply{
+    grid-area:time;
+}
+.four{
+    grid-area:four;
+}
+.five{
+    grid-area:five;
+}
+.six{
+    grid-area:six;
+}
+.minus{
+    grid-area:minus;
+}
+.one{
+    grid-area:one;
+}
+.two{
+    grid-area:two;
+}
+.three{
+    grid-area:three;
+}
+.plus{
+    grid-area:plus;
+}
+.zero{
+    grid-area:zero;
+}
+.dot{
+    grid-area:dot;
+}
+.equal{
+    grid-area:equals;
+    background: #f8ac20;
+    width:50%;
+    margin:auto;
+    height: 80%;
+    position:relative;
+    border-radius:25%;
+    color:white;
+}
+.equal::before{
+    content:"";
+    background:#f8ac20;
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:-25;
+    border-radius:100%;
+    margin: auto;
+}
+
+.equal::after{
+    content:"";
+    background:#f8ac20;
+    width:100%;
+    height:100%;
+    position:absolute;
+    right:-25;
+    border-radius:100%;
+    margin: auto;
+}
+.equal p{
+    position:absolute;
+    bottom:0;
+    margin:25% 35%;
+    z-index: 3;
+}
+@media screen and (max-width:600px){
+.equal p{
+    position:absolute;
+    top:-15%;
+    margin:25% 35% 0;
+}
+}
+.other-calculators{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:20px auto;
+    width:80%;
+    justify-content: space-between;
+}
+
+.other-calculators div>a{
+    text-decoration:none;
+    color:darkred;
+    font-family:'Trebuchet MS';
+    font-size:25px;
+}
+
+
+@media screen and (max-width:640px){
+.other-calculators{
+    flex-direction:column;
+    align-items:center;
+}
+}
